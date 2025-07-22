@@ -1,5 +1,3 @@
-});
-
 // Fade in animation on scroll
 const observerOptions = {
     threshold: 0.1,
