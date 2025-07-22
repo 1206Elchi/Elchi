@@ -311,26 +311,8 @@ main {
 
 .contact-content {
     text-align: center;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
-}
-
-.contact-cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.discord-card,
-}
-.email-card {
-    flex: 1 1 300px;
-    min-width: 250px;
-    max-width: 400px;
-}
-}
 }
 
 .discord-card {
@@ -394,27 +376,23 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
+    
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
     .nav-links {
         display: none;
     }
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    
     .cta-buttons {
         flex-direction: column;
         align-items: center;
-    }
-    .contact-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .discord-card,
-    .email-card {
-        max-width: 100%;
     }
 }
 
