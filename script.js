@@ -33,7 +33,7 @@ function openProject(url) {
     if (url) {
         window.open(url, '_blank');
     } else {
-        alert('Dieses Projekt ist nicht öffentlich verfügbar, aber ich kann Ihnen gerne mehr darüber auf Discord erzählen! 💬');
+        alert('This project is not publicly available, but I’d be happy to tell you more on Discord! 💬');
     }
 }
 
@@ -72,7 +72,7 @@ document.addEventListener('keydown', function(e) {
         document.body.style.animation = 'rainbow 2s infinite';
         setTimeout(() => {
             document.body.style.animation = '';
-            alert('🎉 Konami Code aktiviert! Sie haben das Easter Egg gefunden! 🎉');
+            alert('🎉 Konami Code Activated! You found the Easter Egg! 🎉');
         }, 2000);
     }
 });
@@ -98,20 +98,16 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-// Discord card click interaction
 document.querySelector('.discord-card').addEventListener('click', function() {
-    // Copy Discord username to clipboard
     navigator.clipboard.writeText('elchi_sam').then(() => {
-        // Visual feedback
         const originalText = this.innerHTML;
-        this.innerHTML = '<div style="font-size: 2rem;">✅</div><div>Discord Username kopiert!</div><p>Jetzt können Sie mich auf Discord anschreiben</p>';
+        this.innerHTML = '<div style="font-size: 2rem;">✅</div><div>Discord username copied!</div><p>You can now message me on Discord</p>';
         
         setTimeout(() => {
             this.innerHTML = originalText;
         }, 2000);
     }).catch(() => {
-        // Fallback if clipboard API doesn't work
-        alert('Discord Username: elchi_sam\n\nKopieren Sie diesen Namen und suchen Sie mich auf Discord!');
+        alert('Discord username: elchi_sam\n\nCopy this name and find me on Discord!');
     });
 });
 
